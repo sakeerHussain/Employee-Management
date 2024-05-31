@@ -1,0 +1,68 @@
+<%- include('../partials/head') %>
+<body>
+    <div class="container-fluid frontPage px-0">
+        <div class="col-lg-12">
+            <%- include('../partials/aside') %>
+            <!-- Main page -->
+            <div class="main">
+                <%- include('../partials/navBar') %>
+                <div class="mainPage">
+                    <div class="pageTable">
+                        <%- include('../partials/tableHead') %>
+                        <%- include('../partials/table') %>
+
+                        <!-- Employee Not Found Alert -->
+
+                        <div class="employeeNotFound" id="employeeNotFound">
+                            <i class="fa-solid fa-ban"></i>
+                            <span>Employee not found !</span>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Pagination -->
+                <%- include('../partials/pagination') %>
+
+                <!-- <hr class="main-pg"> -->
+                
+
+                <!-- footer -->
+                <%- include("../partials/footer") %>
+                
+            </div>
+        </div>
+
+        <!-- Add Employee Form -->
+        <%- include('../partials/addEmployee') %>
+        <!-- Employee Added Successfully popup -->
+        
+        <%- include('../partials/addEmpPopUp') %>
+
+        <!-- Employee Edited Successfully popup -->
+        <%- include('../partials/edit-success-pop') %>
+
+        <!-- Employee Deleted Successfully popup -->
+        <%- include('../partials/delete-success-pop') %>
+
+
+
+        <!-- Edit Employee Form -->
+        <%- include('../partials/editEmployee') %>
+        
+    </div>
+
+    <!-- Delete Alert-->
+    <%- include('../partials/deleteEmpPopUp') %>
+    
+    </div>
+    </div>
+    </div>
+
+
+
+    <div id="overlay" class="overlay">
+    </div>
+    <script src="js/appPg1.js"></script>
+</body>
+
+</html>

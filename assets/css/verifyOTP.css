@@ -1,0 +1,86 @@
+/* OTP verification style*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+body{
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+    justify-content: center;
+    background: #4070f4;
+}
+
+:where(.container ,form ,.inputField){
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background: #fff;
+    padding: 30px 65px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    row-gap: 20px;
+}
+.container header{
+    height: 48px;
+    width: 48px;
+    background: #4070f4;
+    color: #fff;
+    font-size: 1.9rem;
+    border-radius: 50%;
+    line-height:48px ;
+    text-align: center;
+}
+.container h4{
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: 500;
+}
+form .inputField{
+    flex-direction: row;
+    column-gap: 10px;
+}
+form input{                     /* //hghh */
+    height: 45px;
+    width: 42px;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1.125rem;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.inputField input::-webkit-inner-spin-button,
+.inputField input::-webkit-outer-spin-button{
+    display: none;
+}
+
+form button{
+    margin-top: 25px;
+    width: 100%;
+    background:#6e93f7;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    padding: 9px 0;
+    border-radius:6px ;
+    cursor: pointer;
+    transition: all 0.2 ease;
+    pointer-events: none;
+
+}
+form button:hover{
+    background-color: #0e4bf1;
+}
+form button.active{
+   background:#4070f4 ;
+   pointer-events: none;
+ 
+}
